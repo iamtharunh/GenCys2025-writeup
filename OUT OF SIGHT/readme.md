@@ -1,12 +1,22 @@
 we have 30mins and 2mins video
+
 video 1 says its AES256 encrypted 
+
 Video 2 say nothin on surface
+
 hint says audio is important
+
 i listened to i can hear dialpad, i did dtmf and found a huge text
+
 strings on video2  last line gave a key
+
 i saw in a writeup we need to remove #
+
 chatgpt said its cbc and IV is 0000........
+
 it gave this code  
+
+```py
 from base64 import b64decode
 from Crypto.Cipher import AES
 from Crypto.Util.Padding import unpad
@@ -23,5 +33,7 @@ iv = b'\x00' * 16      # zero IV
 
 flag = unpad(AES.new(key, AES.MODE_CBC, iv).decrypt(ct), 16)
 print(flag.decode())
+
+```
 
 i got this flag USTCtf{445eb8b348dbaef887011882b56df69e}
