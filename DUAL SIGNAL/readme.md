@@ -1,9 +1,7 @@
 I'm a F1 fan
 
-F follwed numbers was sus also the race
+On finding the car, there were stickers which said FIA<num> on each tire , so i collected them.
 
-4 tyres has FIA and numbers
+As the description said, I tried different combinations of which left front and rear numbers worked.
 
-i was confused putting it in chatgpt
-
-gave USTCtf{<leftfront and leftrear>} 
+USTCtf{<leftfrontleftrear>} 
